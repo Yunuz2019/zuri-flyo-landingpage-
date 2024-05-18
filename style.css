@@ -67,6 +67,7 @@
     border: 1px solid grey;
     width: 50%;
     height: 35px;
+    border-radius: 5px;
    
 }
 
@@ -85,7 +86,8 @@
  #backgroundImageMain{
  background-image: url('bg-curve-desktop.svg');
  background-repeat: no-repeat;
- min-height: 100px;
+ /* min-height: 300px; */
+     min-height: 100px;
 }
 
 #secondMain{
@@ -98,7 +100,7 @@
 }
 
 #secondMainLeft{
-    height: 400px;
+    min-height: 400px;
     /* background-color: tomato; */
     /* margin-top: 120px; */
     /* width: 45%; */
@@ -109,7 +111,7 @@
 }
 
 #secondMainRight{
-    height: 400px;
+    min-height: 400px;
     /* background-color: teal; */
     /* background: #f8f8fe; */
     /* margin-top: 120px; */
@@ -144,7 +146,7 @@
 }
 
 #whiteBackground{
-    height: 170px;
+    min-height: 170px;
       width: 50%;
     line-height: 1.5;
     /* border: 1px solid red; */
@@ -206,6 +208,8 @@
 
 #thirdMainRight{
     /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
 }
 
 #inputThirdMainRight{
@@ -279,24 +283,32 @@ footer{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #navBar {
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        margin: 20px auto;
+        margin: 40px auto;
+        margin-bottom: 200px;
     }
 
     #list ul {
         padding: 0;
+    
     }
 
     #list ul li {
-        display: block;
-        margin: 10px 0;
+        display: inline-block;
+        margin: 10px;
+        color: #000;
+        /* color: #575469; */
+        /* color: #240750; */
+        font-size: 20px;
+        font-weight: bolder;
+        
     }
 
     #firstMain {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #firstMainLeft, #firstMainRight {
@@ -308,17 +320,120 @@ footer{
         margin-top: 20px;
     }
 
+    #h1firstLeft{
+        font-family: sans-serif;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #pfirstLeft{
+        font-family: sans-serif;
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+
     #firstMainRight img {
         width: 100%;
         height: auto;
     }
+
+    #inputButton{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #input1{
+        width: 100%;
+        margin: 20px 0px;
+        height: 70px;
+    }
+
+    #button1{
+        width: 100%;
+        margin: 20px 0px;
+        height: 70px;
+    }
+
+    
+ #backgroundImageMain{
+    background-image: url('bg-curve-mobile.svg');
+    background-repeat: no-repeat;
+    /* min-height: 300px; */
+       min-height: 300px;
+   }
+   
+
+
 
     #secondMain {
         padding: 20px;
     }
 
     #divSecondMain {
+        flex-direction: column-reverse;
+    }
+
+    #hProductive{
+         font-weight: 900;
+         margin: 30px 0px;
+         text-align: center;
+         font-family: 'Raleway', sans-serif;
+         font-size: 25px;
+         
+    }
+
+    .psecondMainLeft{
+        margin: 30px 0px;
+         text-align: center;
+         font-family: sans-serif;
+         font-size: 22px;
+    }
+
+    #divArrow{
+        display: flex;
+    }
+
+    #secondMainLeft{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #pArrowText{
+        font-size: 25px;
+    }
+
+    #divUnderline{
+        width: 50%;
+    }
+
+    #whiteBackground{
+        width: 100%;
+        margin: 40px 0px;
+    }
+
+    #pFlyo{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #nameKyle h6{
+       font-size: 15px;
+    }
+
+    #iconQuotes{
+        width: 15px;
+        height: 15px;
+    }
+
+    #pFounder{
+        font-size: 15px;
     }
 
     #secondMainLeft, #secondMainRight {
@@ -326,17 +441,55 @@ footer{
         margin: 0;
     }
 
-    #thirdMain {
+
+
+    #thirdMain{
+        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
-    #thirdMainRight {
-        width: 100%;
+    #hThirdMainLeft{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+     #pThirdMainLeft{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.5px;
+     }
+
+    #inputThirdMainRight{
+         width: 80%;
+         margin: 20px auto;
     }
 
-    #inputThirdMainRight, #btnThirdMainRight {
+    #btnThirdMainRight{
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    #svgFooterSection {
+        display: flex;
+        
+    }
+
+    .iconDiv{
         width: 100%;
+        /* background-color: yellow; */
+        font-size: 20px;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .footerList{
+        /* background-color: red; */
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 50px;
     }
 
     #lastFooterSection {
